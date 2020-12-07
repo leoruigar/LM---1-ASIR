@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div style="margin-left:auto ; width: 200px; margin-right: auto; margin-top: 10px;">
+    
+   <fieldset>
+       <legend>Mi formulario</legend>
+    
+    <form action="Registro.php" method="POST" >  
+        
+    
+<table>
+
+
+<tr>
+
+<td><label for="nombre"> Nombre</td>
+<td>     <input type="text " name="nombre"  id="nombre" placeholder="por defecto" autofocus size="50" maxlength="10" pattern="(A-Z){6}(0-9){4}">
+</td>
+
+</label>
+</tr>
+<tr>
+
+<td><label for="pass"> Passwd</td>
+<td>
+
+<input type="text " name="pass"  id="pass" placeholder="por defecto" autofocus size="50" maxlength="10">
+
+</label>
+</td>
+
+
+</tr>
+<tr>
+
+
+<td><label for="Preguntas">Mayor de edad </label> Eres mayor de edad?</td>
+<td> Si<input type="radio" name="pregunta" id="preguntas" value="Si" checked></td>
+<td> No<input type="radio" name="pregunta" id="preguntas" value="Si"></td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+<td><label for="aficiones"></label></td>
+<td><input type="checkbox" name="deporte" id="deporte" value="D">Deporte
+<input type="checkbox" name="viajar" id="viajar" value="V">Viajar
+<input type="checkbox" name="cine" id="cine" value="cine">Cine
+
+
+
+
+<tr>
+<td><label for="Provincias"></label></td>
+<td><select name="Provincias" id="Provincias">
+
+<optgroup label="PROV 1" >        
+
+
+
+
+
+
+<option value="-1" > Seleciona</option>
+<option value="S" > Sevilla</option>
+<option value="C" > Cadiz</option>
+</optgroup>
+
+<optgroup label="PROV 2" >        
+
+<option value="H" > Huelva</option>
+<option value="G" > Granada</option>
+
+
+</select>
+
+
+</td>
+
+</tr>
+
+</td>
+
+<tr>
+<td> <label for="fichero"> Imagen</label></td>
+<td> <input type="file" name="fichero" id="fichero"></td>
+</tr>
+
+
+
+
+
+</td>
+
+</tr>
+
+
+<tr>
+<td></td>
+<label for="mensaje">Mensaje</label></td>
+<td> <textarea name="mensaje" id="mensaje" cols="50" rows="10" maxlength="20"></textarea></td>
+
+
+</tr>
+<tr>
+
+<td> <label for="edad">Edad</label></td>
+<td><input type="number" name="edad" id="edad" max="20" min="18">
+<input type="email" name="email" id="email" required> 
+<input type="url" name="web" id="web" required>
+<input type="search" name="web" id="web" required>
+<input type="tel" name="web" id="web" required>
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><label for="fecha"></label></td>
+<td>
+<input type="date" id="fecha1" name="fecha1">
+<input type="datetime-local" id="fecha2" name="fecha2">
+<input type="time" id="fecha1" name="fecha1">
+<input type="month" id="fecha1" name="fecha1">
+<input type="" id="fecha1" name="fecha1">
+
+</td>
+
+
+</tr>
+
+
+<tr>
+<td> <input type="reset" value="Recargar">                 </td>
+<td><input type="button" name="button" id="botton" value="botton "></td>
+<td><input type="submit" value="enviar "></td>
+
+
+</tr>
+
+
+
+
+
+
+
+</table>
+
+
+
+
+    
+    </form>
+
+    </fieldset>
+
+</body>
+</html>

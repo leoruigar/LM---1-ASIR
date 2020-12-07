@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="robots" content="index">
+<meta name="description" content="Tienda de ropa">
+<meta name="language" content="ES"> 
+<meta name="copyright" content="leorg105company"> 
+<meta name="author" content="Leo Ruiz Garcia"> 
+<meta name="revised" content="29/11/2020">
+<meta name="summary" content="Esta es la pagina web de leo para una practica"> 
+ 
+<head>
+        
+<meta name="twitter:card" content="tienda">
+<meta name="twitter:site" content="@tienda de ropa">
+<meta name="twitter:title" content="Tienda de ropa">
+<meta name="twitter:description" content="Descripción de la página no menor a 200 caracteres">
+<meta name="twitter:creator" content="@leorg105">
+<meta name="twitter:data1" content="$3">
+<meta name="twitter:label1" content="Price">
+<meta name="twitter:data2" content="Black">
+<meta name="twitter:label2" content="Color">
+      </head>
+
+ <head>
+<meta property="og:title" content="tienda de ropa" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ejemplo.com/" />
+<meta property="og:image" content=" http://ejemplo.com/imagen.jpg" />
+<meta property="og:description" content="facebook" />
+<meta property="og:site_name" content="Site tienda de ropa" />
+<meta property="og:price:amount" content="15.00" />
+<meta property="og:price:currency" content="USD" />  
+</head>
+
+
+<title>Formulario</title>
+</head>
+<body  style="background-color: #5CDAF0;">
+  
+
+<style>
+input,textarea {
+background-color: #48D37D }
+</style>
+</head>
+
+  
+<h2>Formulario tienda de ropa </h2>
+
+<table>
+<form action="myphp.php" method="POST">
+
+<tr>      
+<td><label for="nombre"> Nombre:</td>
+<td><input type="text " name="nombre"  id="nombre" placeholder="nombre" autofocus size="10" maxlength="10" pattern="[A-Za-z]{3,16}" required>
+</td>
+
+
+<tr>
+<td><label for="apellido"> Apellido: </td>
+<td><input type="text " name="apellido"  id="apellido" placeholder="apellido" autofocus size=20" maxlength="30" pattern="[A-Za-z]{3,16}" required>
+</td>
+</tr>
+
+
+<tr>
+<td><label for="edad"> Edad: </td>
+<td><input type="number " name="edad"  id="edad" placeholder="edad" autofocus size="1" maxlength="3" pattern="[0-9]{2,3}" required>
+</td>
+</tr>
+
+
+<td><label for="direccion"> Dirección: </td>
+<td><input type="text" name="direccion"  id="direccion" placeholder="dirección" autofocus size="60" maxlength="100"required >
+</td>
+
+    
+<tr>
+<td>Pueblos:<label for="pueblo"></label></td> 
+<td><select name="pueblo" id="pueblo">
+        
+<optgroup  label="Sevilla" >        
+        
+<option  value="-1" > Seleciona uno</option>
+<option value="S" > Sanjuan</option>
+<option value="m" > Mairena</option>
+<option value="se" > Sevilla</option>
+<option value="l" > Lebrija</option>
+<option value="a" > Arahal</option>
+<option value="b" > Bormujos</option>
+<option value="c" > Camas</option>
+<option value="g" > Gelves</option>
+<option value="d" > Dos hermanas</option>
+</select>
+</tr>
+
+
+<tr>
+<td><label for="telfono"> telefono (+34) :</td>
+<td><input type="tel" name="telefono"  id="telefono" placeholder="ej. 666666666" autofocus size="10" maxlength="9" pattern="[0-9]{9}" required>
+</td>
+</tr>
+
+
+<tr>
+<td><label for="preguntas"></label> ¿Has trabajado antes?</td>
+<td> Si<input type="radio" name="trabajo" id="preguntas" value="Si">
+No<input type="radio" name="trabajo" id="preguntas" value="Si" checked></td>
+</tr>
+
+
+<tr>
+<td><label for="Fecha"> Fecha de el ultimo trabajo </td>
+<td>     <input type="date" name="Fecha"  id="Fecha" placeholder="dd/mm/yy" autofocus size="10" maxlength="10" required>
+</td>
+</tr>
+  
+
+<tr>
+<td><label for="sociales"></label> redes sociales</td>
+<td> Twitter<input type="checkbox" name="tw" id="preguntas" value="Tw" checked>
+Facebook<input type="checkbox" name="fa" id="preguntas" value="Fa" checked>
+Instagram<input type="checkbox" name="ig" id="preguntas" value="Ig" checked>
+LinkedIn<input type="checkbox" name="lk" id="preguntas" value="lk" checked></td>
+</tr>
+
+
+<tr>
+<td><label for="gmail"> Gmail </td>
+<td><input type="email" name="gmail"  id="gmail" placeholder="@gmail/hotmail.com" autofocus size="20" maxlength="20" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+</td>
+</tr>  
+
+
+<tr>
+<td></td>  
+<td> 
+<label for="mensaje"></label>Descripcion personal: <br>
+<br><textarea name="mensaje" id="mensaje" cols="50" rows="10" maxlength="200" placeholder="Descripcion basica de 200 palabras"  pattern="[A-Za-z]{20,200}"  required>
+</textarea></td>
+</tr>
+
+
+<tr>      
+<td><input type="submit" value="enviar ">
+<input type="reset" value="Borrar">                
+</td>
+</tr>
+
+
+</table>
+<p>Antes de enviar el formulario recuerda rellenar todos los campos</p>
+</body>
+</html>
